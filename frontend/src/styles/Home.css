@@ -1,0 +1,19 @@
+.home {
+    /* background-image: url('../resources/images/login-backgound.svg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* if width is less than 360px hide app-name */
+@media screen and (max-width: 360px) {
+    #app-name {
+        display: none;
+    }
+}
+
+/* if width is less than 360px hide app-name */
+@media screen and (min-width: 361px) {
+    #app-name {
+        display: block;
+    }
+}

@@ -1,0 +1,14 @@
+[
+    {
+        "title": "Next meeting",
+        "description": "We are planning to have a meeting with the new employees. We are going to talk about the new projects and the new software",
+        "author": "Ion Ion",
+        "job": "Team Leader"
+    },
+    {
+        "title": "Workshop",
+        "description": "Our company is organizing a workshop for the new employees. We are going to teach them how to use the new software.",
+        "author": "Valentin-Ciprian Popescu",
+        "job": "CEO"
+    }
+]
