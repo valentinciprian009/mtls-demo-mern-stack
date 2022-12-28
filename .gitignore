@@ -10,7 +10,9 @@ frontend/.gitignore
 frontend/keys/
 frontend/certs/
 
-keys/*
-certs/*
-client_keys/*
-client_certs/*
+keys/*.key
+certs/*.crt
+certs/*.csr
+client_keys/*.key
+client_certs/*.crt
+client_certs/*.csr
