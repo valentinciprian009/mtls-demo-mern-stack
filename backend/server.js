@@ -11,6 +11,9 @@ const options = {
     ca: [
         fs.readFileSync(config.CA_CERT_PATH),
     ],
+    crl: [
+        fs.readFileSync(config.CRL_CERT_PATH),
+    ],
     passphrase: config.CERT_PASSPHRASE,
     port: config.PORT,
     requestCert: true,

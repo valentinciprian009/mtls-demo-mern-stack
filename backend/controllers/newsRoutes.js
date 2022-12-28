@@ -37,7 +37,7 @@ newsRouter.get('/public', (request, response) => {
 
 newsRouter.get('/private', (request, response) => {
     if(request.socket.getPeerCertificate().subject.O !== 'MTA' ||
-    !(request.socket.getPeerCertificate().subject.OU === 'Master-Admin' || request.socket.getPeerCertificate().subject.OU === 'Master-Worker') ||
+    !(request.socket.getPeerCertificate().subject.OU === 'Master-Admin' || request.socket.getPeerCertificate().subject.OU === 'Master-Private') ||
         request.socket.getPeerCertificate().subject.CN !== 'mtls-demo') {
         response.status(403).send('You are not authorized to access this resource');
         return;
