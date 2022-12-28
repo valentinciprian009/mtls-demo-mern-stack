@@ -13,6 +13,7 @@ frontend/certs/
 keys/*.key
 certs/*.crt
 certs/*.csr
+certs/*.pem
 client_keys/*.key
 client_certs/*.crt
 client_certs/*.csr
