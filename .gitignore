@@ -17,3 +17,6 @@ certs/*.pem
 client_keys/*.key
 client_certs/*.crt
 client_certs/*.csr
+client_certs/*.pem
+client_certs/*.p12
+client_certs/*.pfx
