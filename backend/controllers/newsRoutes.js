@@ -17,8 +17,7 @@ newsRouter.get('/', (request, response) => {
 
 newsRouter.get('/admin', (request, response) => {
     if(request.socket.getPeerCertificate().subject.O !== 'MTA' ||
-        request.socket.getPeerCertificate().subject.OU !== 'Master-Admin' ||
-        request.socket.getPeerCertificate().subject.CN !== 'mtls-demo') {
+        request.socket.getPeerCertificate().subject.OU !== 'Master-Admin') {
         response.status(403).send('You are not authorized to access this resource');
         return;
     }
@@ -37,8 +36,7 @@ newsRouter.get('/public', (request, response) => {
 
 newsRouter.get('/private', (request, response) => {
     if(request.socket.getPeerCertificate().subject.O !== 'MTA' ||
-    !(request.socket.getPeerCertificate().subject.OU === 'Master-Admin' || request.socket.getPeerCertificate().subject.OU === 'Master-Private') ||
-        request.socket.getPeerCertificate().subject.CN !== 'mtls-demo') {
+    !(request.socket.getPeerCertificate().subject.OU === 'Master-Admin' || request.socket.getPeerCertificate().subject.OU === 'Master-Private')) {
         response.status(403).send('You are not authorized to access this resource');
         return;
     }
