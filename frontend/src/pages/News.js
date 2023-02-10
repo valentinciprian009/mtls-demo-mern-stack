@@ -15,7 +15,7 @@ function News({ authorization }) {
     }, []);
 
     function getNews() {
-        fetch('https://localhost:3001/news/' + authorization)
+        fetch('https://mtls-demo.ro:3001/news/' + authorization)
             .then((res) => {
                 return res.json();
             })
